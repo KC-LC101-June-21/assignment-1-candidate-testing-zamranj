@@ -33,11 +33,14 @@ for(let i = 0; i < questions.length; i++){
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if(candidateAnswers){
+for(let i = 0; i < candidateAnswers.length; i++){
+  if(candidateAnswers[i]===correctAnswers[i]){
     console.log(`Correct!`);
   }else{
-    console.log(`Correct Answer: ${correctAnswers}`);
+    console.log(`Correct Answer: ${correctAnswers[i]}`);
   }
+}
+
 let grade;
   
  
@@ -49,6 +52,7 @@ function runProgram() {
   // TODO 1.1c: Ask for candidate's name //
   console.log("Greetings, "+ candidateName)
   askQuestion();
+  
 }
 
 // Don't write any code below this line //
