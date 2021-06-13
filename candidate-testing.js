@@ -31,18 +31,6 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
 let grade;
-
-//  let correctAnswersLowerCased =[];
-
-//   //Convert reponses to lower case
-//   for(let i = 0; i < responses.length; i++){
-//     candidateAnswers.push(responses[i].toLowerCase());
-//   }
-//   //convert correctAnswer to lower case
-//   for(let i=0; i < correctAnswers.length; i++){
-//     correctAnswersLowerCased.push(correctAnswers[i].toLowerCase());
-//   }
-
 let score = 0;
 
 
