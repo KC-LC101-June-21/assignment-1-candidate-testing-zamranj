@@ -32,22 +32,22 @@ function gradeQuiz(candidateAnswers) {
   
 let grade;
 
- let correctAnswersLowerCased =[];
+//  let correctAnswersLowerCased =[];
 
-  //Convert reponses to lower case
-  for(let i = 0; i < responses.length; i++){
-    candidateAnswers.push(responses[i].toLowerCase());
-  }
-  //convert correctAnswer to lower case
-  for(let i=0; i < correctAnswers.length; i++){
-    correctAnswersLowerCased.push(correctAnswers[i].toLowerCase());
-  }
+//   //Convert reponses to lower case
+//   for(let i = 0; i < responses.length; i++){
+//     candidateAnswers.push(responses[i].toLowerCase());
+//   }
+//   //convert correctAnswer to lower case
+//   for(let i=0; i < correctAnswers.length; i++){
+//     correctAnswersLowerCased.push(correctAnswers[i].toLowerCase());
+//   }
 
 let score = 0;
 
 
 for(let i = 0; i < questions.length; i++){
-  if(correctAnswers[i].toLowerCase()===responses[i].toLowerCase()){
+  if(correctAnswers[i].toString().toLowerCase()===responses[i].toString().toLowerCase()){
       score += 1;
       console.log(`\n\n${i+1})${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`);
                  
