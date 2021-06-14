@@ -35,7 +35,7 @@ let score = 0;
 
 
 for(let i = 0; i < questions.length; i++){
-  if(correctAnswers[i].toString().toLowerCase()===responses[i].toString().toLowerCase()){
+  if(correctAnswers[i].toLowerCase()===candidateAnswers[i].toLowerCase()){
       score += 1;
       console.log(`\n\n${i+1})${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`);
                  
@@ -67,7 +67,7 @@ function runProgram() {
   console.log("Greetings, "+ candidateName)
   for(let i = 0; i < questions.length; i++){
   
-  responses[i] = askQuestion(questions[i]);
+  candidateAnswers[i] = askQuestion(questions[i]);
   
  }
   // askQuestion();
