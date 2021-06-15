@@ -33,11 +33,12 @@ function gradeQuiz(candidateAnswers) {
 let grade;
 let score = 0;
 
-
+console.log(`\n\nCandidate Name: ${candidateName}`)
 for(let i = 0; i < questions.length; i++){
   if(correctAnswers[i].toLowerCase()===candidateAnswers[i].toLowerCase()){
       score += 1;
-      console.log(`\n\n${i+1})${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`);
+      console.log
+      (`${i+1})${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`);
                  
 }else{
        console.log(`${i+1}) ${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`)
