@@ -53,7 +53,7 @@ if(grade >= 80){
   status = "Failed";
 }
 
-console.log(`>>> Overall Grades: ${grade}% (${score} out of ${correctAnswers.length}) <<<\n`);
+console.log(`>>> Overall Grades: ${grade}% (${score} out of ${correctAnswers.length} responses correct) <<<\n`);
 console.log(`>>> Status: ${status} <<<\n`);
 
 
